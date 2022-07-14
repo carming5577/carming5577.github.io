@@ -7,7 +7,7 @@ body {
 	position:absolute;
  	height:100%;
  	left: 13%;
-	background: white url(img/back.png) ;
+	background-image: url(img/back.png);
 }
 
 #menu {
@@ -19,7 +19,6 @@ body {
 	padding: 5px;;
 	margin: 0px;;
 	float:left;
-	background: white url(img/back.png) ;
 	color:white;
 	margin: 0;
 	padding-top:5px;
