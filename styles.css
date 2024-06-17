@@ -87,3 +87,14 @@ body {
     font-size: 24px;
     letter-spacing: 2px; /* 增加字符間距為 2 像素 */
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1; /* 背景顏色可以根據需要更改 */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px; /* 字體大小可以根據需要更改 */
+    color: #555; /* 字體顏色可以根據需要更改 */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* 陰影效果，可以根據需要更改 */
+  }
