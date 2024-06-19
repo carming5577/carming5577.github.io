@@ -1,0 +1,100 @@
+/* CSS樣式表 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.result {
+    margin-top: 50px;
+}
+
+.image-button {
+    text-align: center; /* 讓內容水平居中 */
+    margin-bottom: 20px; /* 設置容器底部間距 */
+
+    width: 200px; /* 設置圖片寬度 */
+    height: 300px; /* 設置圖片高度 */
+    margin: 20px; /* 設置圖片間距 */
+    cursor: pointer;
+    display: inline-block; /* 讓圖片按鈕水平排列 */
+}
+.container {
+    text-align: center; /* 將容器內容水平居中 */
+}
+
+.result-images-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-image {
+    width: 200px; /* 設置圖片寬度 */
+    height: 300px; /* 設置圖片高度 */
+    margin: 10px;
+}
+
+.additional-text {
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+
+
+.Role-text-container {
+    position: fixed;
+    bottom: 250px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Role-text {
+    width: 150px; /* 設置寬度 */
+    height: 20px; /* 設置高度 */
+    margin: 0 28px; /* 設置文字元素之間的間距 */
+    background-color: rgba(255, 255, 255, 0.8); /* 背景顏色，可自行調整 */
+    padding: 10px 20px; /* 內邊距，可根據需要調整 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 陰影效果，可自行調整 */
+}
+
+.step-description-container {
+    position: fixed;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.step-description {
+    width: 150px; /* 設置寬度 */
+    height: 20px; /* 設置高度 */
+    margin: 0 28px; /* 設置文字元素之間的間距 */
+    background-color: rgba(255, 255, 255, 0.8); /* 背景顏色，可自行調整 */
+    padding: 10px 20px; /* 內邊距，可根據需要調整 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 陰影效果，可自行調整 */
+}
+
+.bold-red-text {
+    font-weight: bold; /* 設置文字為粗體 */
+    color: red; /* 設置文字顏色為紅色 */
+    text-align: center; /* 將文字水平置中 */
+    font-size: 24px;
+    letter-spacing: 2px; /* 增加字符間距為 2 像素 */
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1; /* 背景顏色可以根據需要更改 */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px; /* 字體大小可以根據需要更改 */
+    color: #555; /* 字體顏色可以根據需要更改 */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* 陰影效果，可以根據需要更改 */
+  }

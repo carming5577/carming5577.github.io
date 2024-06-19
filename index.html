@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>占卜</title>
+<!-- 引入CSS樣式表 -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <footer>
+        <p><pre>&copy; 文本、程式碼使用:「ChatGPT」協助製作     圖片使用:「dream.ai、Copilot」協助製作</pre></p>
+      </footer>
+<div class="container">
+    <!-- 第一步：選擇一張圖片 -->
+    <div id="step1">
+        <h2>請選擇一張圖片</h2>
+        <!-- 點擊圖片後觸發showStep2函數 -->
+        <img src="images/photo_A.jpg" class="image-button" onclick="showStep2('A')">
+        <img src="images/photo_B.jpg" class="image-button" onclick="showStep2('B')">
+        <img src="images/photo_C.jpg" class="image-button" onclick="showStep2('C')">
+        <img src="images/photo_D.jpg" class="image-button" onclick="showStep2('D')">
+        <div class="Role-text-container">
+            <div class="Role-text">探險家</div>
+            <div class="Role-text">考古學家</div>
+            <div class="Role-text">偵探</div>
+            <div class="Role-text">超級奶奶</div>
+        </div>
+    </div>
+    <!-- 第二步：再次選擇一張圖片 -->
+    <div id="step2" class="result" style="display: none;">
+        <h2>請選擇情境圖片</h2>
+        <p id="Step2Text"></p>
+        <div class="step-description-container">
+            <div id="choiceText1" class="step-description"></div>
+            <div id="choiceText2" class="step-description"></div>
+            <div id="choiceText3" class="step-description"></div>
+        </div>
+
+        <!-- 由JavaScript動態生成圖片按鈕 -->
+    </div>
+    <!-- 第三步：最後選擇一張圖片 -->
+    <div id="step3" class="result" style="display: none;">
+        <h2>請選擇最後一張圖片</h2>
+        <p id="Step3Text"></p>
+        <div class="step-description-container">
+            <div id="choiceText4" class="step-description"></div>
+            <div id="choiceText5" class="step-description"></div>
+            <div id="choiceText6" class="step-description"></div>
+        </div>
+        
+        <!--由JavaScript動態生成圖片按鈕 -->
+    </div>
+    <!-- 顯示結果 -->
+    <div id="result" class="result" style="display: none;">
+        <h2>結果</h2>
+        <p id="resultText"></p>
+    </div>
+</div>
+<!-- 引入JavaScript腳本 -->
+<script src="script.js"></script>
+</body>
+</html>
