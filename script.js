@@ -30,7 +30,10 @@ function showStep2(choice) {
         choiceText3.innerText='解開古老的謎題';
     }
     if(choice=='B'){
-        Step2Text.innerText = '今天你遇到了B.....';
+        Step2Text.innerText = '今天你打算.....';
+        choiceText1.innerText='挖掘古代遺址';
+        choiceText2.innerText='破解古文明謎團';
+        choiceText3.innerText='發現寶藏';
     }
     if(choice=='C'){
         Step2Text.innerText = '今天打算做什麼事情?';
@@ -80,13 +83,22 @@ function showStep3(choice) {
         choiceText6.innerText='解決隊伍內部的衝突';
     }
     if(choice=='B_1'){
-        Step3Text.innerText = '你決定B_1.....';
+        Step3Text.innerText = '你決定.....';
+        choiceText4.innerText='對抗盜墓賊';
+        choiceText5.innerText='解開古代詛咒';
+        choiceText6.innerText='與當地部落合作';
     }
     if(choice=='B_2'){
-        Step3Text.innerText = '你決定B_2.....';
+        Step3Text.innerText = '你決定.....';
+        choiceText4.innerText='對抗盜墓賊';
+        choiceText5.innerText='解開古代詛咒';
+        choiceText6.innerText='與當地部落合作';
     }
     if(choice=='B_3'){
-        Step3Text.innerText = '你決定B_3.....';
+        Step3Text.innerText = '你決定.....';
+        choiceText4.innerText='對抗盜墓賊';
+        choiceText5.innerText='解開古代詛咒';
+        choiceText6.innerText='與當地部落合作';
     }
     if(choice=='C_1'){
         Step3Text.innerText = '你打算...';
@@ -277,9 +289,114 @@ function showResult(choice) {
         additionalText1.innerText = '探險家在面對隊伍內部的矛盾時，通過智慧和決斷力，成功解決了問題，並在解開古老謎題的過程中，取得了重要的進展。\n'
         additionalText2.innerText = '意味著你擁有解決複雜問題的能力，能夠有效地處理團隊內部的衝突，並在探險中取得積極的成就。';
     }
-
-
-
+    if((choice=='B_1_1') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家在挖掘古代遺址時發現了一批盜墓賊，成功報警並與警方合作，阻止了盜墓賊的行動。\n'
+        additionalText2.innerText = '看似偶然的發現，實則暗示著你在意外情況下會有重大收穫，但也要警惕身邊的不懷好意之人。';
+    }
+    if((choice=='B_1_1') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家在與盜墓賊的對抗中受傷，但憑藉勇氣和智慧，最終保護了遺址並將盜墓賊繩之以法。\n'
+        additionalText2.innerText = '這在提醒你，在追求正義和保護珍貴事物的過程中，可能會遭遇不必要的傷害和痛苦。';
+    }
+    if((choice=='B_1_1') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家在對抗盜墓賊的過程中發現了一個更大的盜墓集團，並最終協助當局將其一網打盡。\n'
+        additionalText2.innerText = '你的堅持和勇氣會揭示出比預期更大的問題，暗示著你可能在解決小困難時發現更大的挑戰。';
+    }
+    if((choice=='B_1_2') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家在挖掘遺址時意外觸發了一個古代詛咒，經過艱難探索，最終破解了詛咒並恢復了遺址的安全。\n'
+        additionalText2.innerText = '記住，挑戰是成長的契機，但也要小心，過於冒險可能引發不必要的麻煩。';
+    }
+    if((choice=='B_1_2') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家發現詛咒的秘密，並通過古代文獻找到了解除詛咒的方法，成功解救了受詛咒影響的人們。\n'
+        additionalText2.innerText = '你的好奇心和求知欲將引領你揭開未知的秘密，這些秘密將成為你解決困境的關鍵。';
+    }
+    if((choice=='B_1_2') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家在解開詛咒的過程中，發現詛咒其實是一種古代防衛機制，並利用這一發現保護了遺址。\n'
+        additionalText2.innerText = '遇到問題時，不妨換個角度思考，也許問題本身就蘊藏著解決方案。';
+    }
+    if((choice=='B_1_3') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家與當地部落建立了友好關係，通過合作成功挖掘出遺址的重要文物，並共同保護了這些文物。\n'
+        additionalText2.innerText = '要警惕利益衝突，保持開放但謹慎的態度，避免被信任所蒙蔽。';
+    }
+    if((choice=='B_1_3') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家在合作過程中學到了許多部落的傳統和智慧，並利用這些知識進行了更深入的挖掘和研究。\n'
+        additionalText2.innerText = '不要忽視不同觀點和文化的價值，這些多樣性將成為你突破瓶頸的重要資源。';
+    }
+    if((choice=='B_1_3') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家與部落合作，發現了遺址中的寶藏，並決定將寶藏的一部分用於改善部落的生活條件。\n'
+        additionalText2.innerText = '你的慷慨會帶來更多的支持和尊重，但過度慷慨可能會引發嫉妒和矛盾，小心平衡利益分配。';
+    }
+    if((choice=='B_2_1') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家在破解古文明謎團的過程中，發現了盜墓賊的蹤跡，並成功阻止了他們的計劃，保護了寶貴的遺產。\n'
+        additionalText2.innerText = '在你追求真相的過程中，會遇到試圖破壞你成果的人，警惕身邊的危險，並準備好面對挑戰。';
+    }
+    if((choice=='B_2_1') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家與警方合作，設計了一個陷阱，引誘盜墓賊現身並將其繩之以法，成功破解了謎團。\n'
+        additionalText2.innerText = '謀劃周全，行動果斷，將使你能夠解決問題並取得勝利。但要避免過於自信，忽視潛在的變數。';
+    }
+    if((choice=='B_2_1') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家在與盜墓賊的對抗中，發現了一個與古文明謎團相關的秘密，並最終解開了這一謎題。\n'
+        additionalText2.innerText = '勇敢迎接挑戰，你的努力將得到意想不到的回報，但也要小心謎團背後的隱藏危險。';
+    }
+    if((choice=='B_2_2') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家在破解謎團的過程中發現了一個古代詛咒，並經過艱難的研究和探索，最終成功解開了詛咒。\n'
+        additionalText2.innerText = '小心你可能解開的問題，它們或許會引發新的挑戰或意外。';
+    }
+    if((choice=='B_2_2') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家利用古文明的知識找到了破解詛咒的線索，成功解除詛咒並挖掘出了更多的遺跡。\n'
+        additionalText2.innerText = '你的努力將揭示更多的機會和資源。但要謹慎，過多的探索可能會帶來意想不到的後果。';
+    }
+    if((choice=='B_2_2') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家在破解謎團的同時，發現詛咒是一個防禦機制，並巧妙地利用這一發現保護了遺址。\n'
+        additionalText2.innerText = '你將學會如何利用挑戰來達成自己的目標，但要注意不要過度依賴這種策略。';
+    }
+    if((choice=='B_2_3') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家與當地部落合作，成功破解了古文明的謎團，並挖掘出許多珍貴的文物，增進了對古文明的了解。\n'
+        additionalText2.innerText = '你的成功將增加你的知識和理解，但也要警惕合作中的潛在矛盾，保持開放但謹慎的態度。';
+    }
+    if((choice=='B_2_3') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家在部落的幫助下，破解了謎團並發現了遺址中的寶藏，決定與部落分享這些發現。\n'
+        additionalText2.innerText = '寶藏的分享會帶來雙贏的結果，但要小心利益分配，避免引發爭端。';
+    }
+    if((choice=='B_2_3') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家與部落共同努力，破解了古文明的謎團，並利用這些知識改進了部落的生活和文化保護措施。\n'
+        additionalText2.innerText = '知識的應用將帶來實際的改進，但要保持謙遜，避免過度自信影響你的判斷。';
+    }
+    if((choice=='B_3_1') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家在發現寶藏的同時，遭遇了盜墓賊的襲擊，但他憑藉勇氣和智慧，成功保護了寶藏並將盜墓賊繩之以法。\n'
+        additionalText2.innerText = '即使面對陰謀和背叛，你也能保護自己的成果；然而，小心過度自信帶來的風險，適時謙遜才能更好地保障成功。';
+    }
+    if((choice=='B_3_1') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家與當地警方合作，設計了一個陷阱，引誘盜墓賊現身並將其捕獲，成功保護了寶藏。\n'
+        additionalText2.innerText = '要警惕不和諧的因素，維持合作的穩定和信任至關重要。';
+    }
+    if((choice=='B_3_1') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家在對抗盜墓賊的過程中，發現寶藏背後隱藏的秘密，並成功揭開了這一秘密。\n'
+        additionalText2.innerText = '你的探索將揭示更多的真相，但也要警惕過度探索帶來的風險。偶爾的退一步可能更有利於長遠發展。';
+    }
+    if((choice=='B_3_2') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家在發現寶藏後，意外觸發了一個古代詛咒，經過艱難探索，最終成功解開了詛咒並保護了寶藏。\n'
+        additionalText2.innerText = '你的毅力和智慧將幫助你化解危機，但要記住，每次解決問題後，都要做好迎接新挑戰的準備。';
+    }
+    if((choice=='B_3_2') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家發現寶藏中藏有解除詛咒的線索，成功解除了詛咒，並挖掘出了更多的文物。\n'
+        additionalText2.innerText = '你的洞察力將揭示更多的機會，但過度依賴這種運氣可能會讓你失去警惕，保持警覺才能持續成功。';
+    }
+    if((choice=='B_3_2') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家在解開詛咒的過程中，發現寶藏實際上是一個古代文明的防禦機制，並利用這一發現保護了遺址。\n'
+        additionalText2.innerText = '你能巧妙地利用所學知識轉危為安，但要注意不要過度依賴一種方法，靈活應變才能更好地應對未來的挑戰。';
+    }
+    if((choice=='B_3_3') & (randomNumber==1)){
+        additionalText1.innerText = '考古學家與當地部落合作，成功發現了寶藏，並決定將寶藏的一部分用於改善部落的生活條件。\n'
+        additionalText2.innerText = '你的慷慨和社會責任感將改善他人的生活，同時增強你自己的福祉。注意保持這種平衡，避免因利益分配不均而引發衝突。';
+    }
+    if((choice=='B_3_3') & (randomNumber==2)){
+        additionalText1.innerText = '考古學家在部落的幫助下，發現寶藏並破解了其中的秘密，增進了對古文明的了解。\n'
+        additionalText2.innerText = '保持開放的心態，學習他人的智慧，這將為你帶來意想不到的收穫。';
+    }
+    if((choice=='B_3_3') & (randomNumber==3)){
+        additionalText1.innerText = '考古學家與部落共同努力，成功發現了寶藏，並利用這些發現保護了遺址和文物。\n'
+        additionalText2.innerText = '記得持續鞏固這種合作關係，因為未來的挑戰仍需集體力量來應對。';
+    }
     if((choice=='C_1_1') & (randomNumber==1)){
         additionalText1.innerText = '偵探發現謀殺案的主謀與黑幫有關，成功潛入黑幫組織並搜集到關鍵證據，使主謀被繩之以法。\n'
         additionalText2.innerText = '你將揭示真相，並獲得成功，正義終將得以伸張。';
@@ -505,7 +622,7 @@ function showResult(choice) {
 function generateImageButtons(containerId, choice, count, clickHandler) {
     // 取得容器元素
     const container = document.getElementById(containerId);
-    // 清空容器內容(若用了，字藉會被削掉，除非在這行之後再輸入文字)
+    // 清空容器內容(若用了，字會被削掉，除非在這行之後再輸入文字)
     //container.innerHTML = '';
     // 生成圖片按鈕
     for (let i = 1; i <= count; i++) {
