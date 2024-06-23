@@ -10,9 +10,33 @@ const choiceText4=document.getElementById('choiceText4');
 const choiceText5=document.getElementById('choiceText5');
 const choiceText6=document.getElementById('choiceText6');
 //如果網頁上有多個元素使用了相同的 id，getElementById 只會返回第一個
+// 過場動畫持續時間（毫秒）
+const transitionDuration = 500;
+
+// 過場動畫效果
+function addTransitionEffect(hideStep, showStep, callback) {
+    const hideElement = document.getElementById(hideStep);
+    const showElement = document.getElementById(showStep);
+
+    // 添加過場動畫
+    hideElement.classList.add('fade-out');
+    
+    setTimeout(() => {
+        hideElement.style.display = 'none';
+        hideElement.classList.remove('fade-out');
+        showElement.style.display = 'block';
+        showElement.classList.add('fade-in');
+
+        setTimeout(() => {
+            showElement.classList.remove('fade-in');
+            callback();
+        }, transitionDuration);
+    }, transitionDuration);
+}
 
 // 第一步選擇圖片後的處理函數，顯示第二步選擇圖片的選項
 function showStep2(choice) {
+    addTransitionEffect('step1', 'step2', () => {
     // 隱藏第一步
     document.getElementById('step1').style.display = 'none';
     // 顯示第二步，屬性設置為 'block'，這會使得 'step2' 元素在網頁上顯示出來
@@ -49,10 +73,12 @@ function showStep2(choice) {
     }
     // 生成第二步的圖片按鈕
     generateImageButtons('step2', choice, 3, showStep3);
+})
 }
 
 // 第二步選擇圖片後的處理函數，顯示最後一步選擇圖片的選項
 function showStep3(choice) {
+    addTransitionEffect('step2', 'step3', () => {
     // 隱藏第二步
     document.getElementById('step2').style.display = 'none';
     // 顯示第三步
@@ -136,13 +162,14 @@ function showStep3(choice) {
         choiceText5.innerText='拯救被困的動物';
         choiceText6.innerText='尋找失落的寶藏';
     }
-    
     // 生成第三步的圖片按鈕
     generateImageButtons('step3', choice, 3, showResult);
+})
 }
 
 // 最後一步選擇圖片後的處理函數，顯示結果及相應圖片
 function showResult(choice) {
+    addTransitionEffect('step3', 'result', () => {
     // 隱藏第三步
     document.getElementById('step3').style.display = 'none';
     // 顯示結果
@@ -616,6 +643,7 @@ function showResult(choice) {
     // 在 body 內添加文字敘述
     document.body.appendChild(additionalText1); 
     document.body.appendChild(additionalText2);
+})
 }
 
 // 生成圖片按鈕的函數
