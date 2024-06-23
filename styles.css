@@ -98,3 +98,21 @@ footer {
     color: #555; /* 字體顏色可以根據需要更改 */
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* 陰影效果，可以根據需要更改 */
   }
+  /* 過場動畫 */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
